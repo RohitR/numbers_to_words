@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/lxsameer/numbers_to_words.png?branch=master)](https://travis-ci.org/lxsameer/numbers_to_words)
+
+[![Gem Version](https://badge.fury.io/rb/numbers_to_words.png)](http://badge.fury.io/rb/numbers_to_words)
+
 # Numbers To Words
 Very simple gem to convert integers to their English words representations.
 
