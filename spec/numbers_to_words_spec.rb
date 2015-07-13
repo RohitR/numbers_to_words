@@ -1,10 +1,9 @@
 require 'spec_helper'
-require 'pry'
 
-describe NumeralsToWords do
+describe NumbersToWords do
 
   it 'has a version number' do
-    expect(NumeralsToWords::VERSION).not_to be nil
+    expect(NumbersToWords::VERSION).not_to be nil
   end
 
   it 'included in Interger class' do

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in numerals_to_words.gemspec
+# Specify your gem's dependencies in numbers_to_words.gemspec
 gemspec
 
 group :development, :test do

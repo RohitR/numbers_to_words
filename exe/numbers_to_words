@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'numbers_to_words'
+
+begin
+  value = Integer(ARGV[0])
+  puts value.to_word
+rescue ArgumentError => e
+  puts "Invalid type. Please enter an integer value."
+end

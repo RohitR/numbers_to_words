@@ -1,8 +1,8 @@
-require "numerals_to_words/version"
-require "numerals_to_words/constants"
+require "numbers_to_words/version"
+require "numbers_to_words/constants"
 
 
-module NumeralsToWords
+module NumbersToWords
 
   # Convert the current integer number to its English words
   def to_word
@@ -65,5 +65,5 @@ end
 
 class Integer
   # Patch Integer class to include `to_word` method
-  include NumeralsToWords
+  include NumbersToWords
 end

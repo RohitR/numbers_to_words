@@ -1,4 +1,4 @@
-# This module will be included in the numerals to word specs
+# This module will be included in the numbers to word specs
 module Helpers
   # Provide a simple hash to create dynamic specs
   def numerals_test_hash

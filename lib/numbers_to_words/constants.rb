@@ -1,4 +1,4 @@
-module NumeralsToWords
+module NumbersToWords
   LESS_THAN_20 = ["zero",  "one",   "two",  "three", "four",   "five",   "six",
                   "seven", "eight", "nine", "ten",   "eleven", "twelve",
                   "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",

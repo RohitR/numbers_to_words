@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'numerals_to_words/version'
+require 'numbers_to_words/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "numerals_to_words"
-  spec.version       = NumeralsToWords::VERSION
+  spec.name          = "numbers_to_words"
+  spec.version       = NumbersToWords::VERSION
   spec.authors       = ["Sameer Rahmani"]
   spec.email         = ["lxsameer@gnu.org"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Simple gem to convert integers to their English words.}
+  spec.description   = %q{Simple gem to convert integers to their English words. For example 4329 to 'four thousand three hundred twenty nine' }
+  spec.homepage      = "https://github.com/lxsameer/numbers_to_words"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
