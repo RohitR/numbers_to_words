@@ -23,6 +23,19 @@ Or install it yourself as:
 
 Just call `to_word` method on any integer you want.
 
+for example:
+
+```ruby
+6234239234.to_word
+# "six billion, two hundred thirty four million, two hundred thirty nine thousand, two hundred thirty four"
+```
+There is a executable script bundled with this gem that you can use too. for example:
+
+```bash
+$ numbers_to_words 6234239234
+six billion, two hundred thirty four million, two hundred thirty nine thousand, two hundred thirty four
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. Run `bundle exec numbers_to_words` to use the gem in this directory, ignoring other installed copies of this gem.
