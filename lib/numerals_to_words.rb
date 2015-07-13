@@ -1,5 +1,12 @@
 require "numerals_to_words/version"
 
 module NumeralsToWords
-  # Your code goes here...
+
+  def to_word
+  end
+
+end
+
+class Integer
+  include NumeralsToWords
 end
