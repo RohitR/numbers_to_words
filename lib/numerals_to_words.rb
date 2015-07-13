@@ -5,7 +5,8 @@ require "numerals_to_words/constants"
 module NumeralsToWords
 
   def to_word
-    convert_2_digits_number(self)
+    return convert_2_digits_number(self) if self < 100
+    return convert_3_digits_number(self) if self < 1000
   end
 
   private
@@ -25,6 +26,19 @@ module NumeralsToWords
       end
     end
 
+    def convert_3_digits_number(value)
+      word = ''
+      division_result  = value / 100
+      mod_result       = value % 100
+
+      if division_result > 0
+        word = "#{LESS_THAN_20[division_result]} hundred"
+        word = "#{word} " if mod_result > 0
+      end
+
+      word = "#{word}#{convert_2_digits_number(mod_result)}" if mod_result > 0
+      word
+    end
 end
 
 class Integer
