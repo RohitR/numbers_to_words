@@ -4,10 +4,13 @@ require "numerals_to_words/constants"
 
 module NumeralsToWords
 
+  # Convert the current integer number to its English words
   def to_word
     return convert_2_digits_number(self) if self < 100
     return convert_3_digits_number(self) if self < 1000
 
+    # If number was greater than 1000 we have to look up its suffix
+    # in MORE_THAN_THOUSAND constant
     MORE_THAN_THOUSAND.length.times do |i|
       prev_prefix_index = i - 1
 
@@ -44,6 +47,7 @@ module NumeralsToWords
       end
     end
 
+    # Convert numbers between 100 and 1000
     def convert_3_digits_number(value)
       word = ''
       division_result  = value / 100
@@ -60,5 +64,6 @@ module NumeralsToWords
 end
 
 class Integer
+  # Patch Integer class to include `to_word` method
   include NumeralsToWords
 end
