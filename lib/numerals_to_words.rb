@@ -38,7 +38,7 @@ module NumeralsToWords
         new_value = 20 + 10 * i
 
         if new_value + 10 > value
-          return "#{word}-#{LESS_THAN_20[value % 10]}" if value % 10 > 0
+          return "#{word} #{LESS_THAN_20[value % 10]}" if value % 10 > 0
           return word
         end
       end
