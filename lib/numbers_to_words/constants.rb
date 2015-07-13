@@ -11,7 +11,7 @@ module NumbersToWords
                         "quadrillion", "quintillion", "sextillion", "septillion",
                         "octillion", "nonillion", "decillion", "undecillion",
                         "duodecillion", "tredecillion", "quattuordecillion",
-                        "sexdecillion", "septendecillion", "octodecillion",
-                        "novemdecillion", "vigintillion"]
+                        "quindecillion", "sexdecillion", "septendecillion",
+                        "octodecillion", "novemdecillion", "vigintillion", ""]
 
 end

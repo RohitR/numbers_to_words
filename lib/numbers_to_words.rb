@@ -23,10 +23,11 @@ module NumbersToWords
         thousand_value = MORE_THAN_THOUSAND[prev_prefix_index]
 
         result = "#{convert_3_digits_number(left)} #{thousand_value}"
-        result = "#{result} #{right.to_word}" if right > 0
+        result = "#{result}, #{right.to_word}" if right > 0
         return result
       end
     end
+    'Number is in Centillion range.'
   end
 
   private
